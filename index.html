@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gin на Amvera</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main>
+    <h1>Gin на Amvera</h1>
+    <p>Пример API, статических файлов и постоянного хранилища.</p>
+    <section>
+      <h2>Проверка приложения</h2>
+      <button data-action="health">Выполнить GET /api/health</button>
+    </section>
+    <section>
+      <h2>Элементы</h2>
+      <form id="item-form">
+        <input id="item-name" maxlength="120" placeholder="Название элемента" required>
+        <button type="submit">Выполнить POST /api/items</button>
+      </form>
+      <button data-action="items">Выполнить GET /api/items</button>
+      <div id="items"></div>
+    </section>
+    <section>
+      <h2>Ответ</h2>
+      <div id="response-status">Запросы ещё не выполнялись</div>
+      <pre id="response-body">—</pre>
+    </section>
+  </main>
+  <script src="/app.js" defer></script>
+</body>
+</html>

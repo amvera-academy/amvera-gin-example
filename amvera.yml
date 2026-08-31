@@ -1,0 +1,15 @@
+meta:
+  environment: go
+  toolchain:
+    name: go
+    version: "1.23"
+
+build:
+  requirementsPath: go.mod
+  commands:
+    - go build -o app .
+
+run:
+  command: ./app
+  containerPort: 5000
+  persistenceMount: /data
