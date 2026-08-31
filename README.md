@@ -15,6 +15,8 @@
 - `POST /api/items`
 - `DELETE /api/items/{id}`
 
+<img width="794" height="852" alt="image" src="https://github.com/user-attachments/assets/53e29ca0-b9d8-436a-b99f-83a328b4a695" />
+
 ## Как правильно сохранять файлы
 
 Изменяемые файлы необходимо сохранять в `/data`. Относительный путь вроде `data/items.json` считается от текущей рабочей директории и не является постоянным хранилищем Amvera.
